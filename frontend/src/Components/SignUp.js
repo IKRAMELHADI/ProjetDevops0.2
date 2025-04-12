@@ -3,11 +3,21 @@ const SignUp=()=>{
     const[name,setName]=useState("");
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
-    const collectData=()=>{
-        return(
-        console.warn(name,email,password)
-        )
+    const collectData=async() =>{
+        console.warn(name,email,password);
+        let result = await fetch("http://127.0.0.1:5000/register",{
+            method: 'post',
+            body:JSON.stringify({name,email,password}),
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+        result= await result.json();
+        console.warn(result);
     }
+
+        
+    
 
     return(
         <div >
