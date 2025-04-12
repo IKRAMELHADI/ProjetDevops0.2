@@ -30,10 +30,22 @@
  text-align: center;
 
 }
+.appButton{
+  margin: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: skyblue;
+  border: solid 1px;
+  cursor: pointer;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.register{
+  margin-left: 30px;
 }
 
 .App-header {
@@ -45,6 +57,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.inputBox{
+  padding: 7PX;
+  display: block;
+  border: 1px solid skyblue;
+  width: 300px;
+  margin: 20px;
+  margin-left: 32%;
 }
 
 .App-link {
