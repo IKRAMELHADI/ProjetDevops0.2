@@ -21,6 +21,10 @@
   text-decoration: none;
   padding: 5px;
 }
+.login{
+  
+  margin-top: 100px;
+}
 
 .footer{
  position: absolute;
@@ -64,7 +68,7 @@
   border: 1px solid skyblue;
   width: 300px;
   margin: 20px;
-  margin-left: 32%;
+  margin-left: 39%;
 }
 
 .App-link {
